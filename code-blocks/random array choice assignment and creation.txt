@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+	int fuck[19];
+	int x = 0;
+
+	//alters value of default rand() function
+	srand(time(0));
+	//time(0) gets the current time of the computer system and plugs it into
+	//rand() function to make its output more random.
+
+	do
+	{
+		//replace x with (rand()%20) to randomly select an array variable
+		//remember (rand()>%20<) >%20< places a limit on how high it can go
+		/*remember >1+<(rand()%20) >1+< sets a standard to only allow a number
+		above 1 or which ever value you put inplace of 1.
+		*/
+		//replace x in fuck[x] array to have rand randomly select a variable
+		//from the array and then assign a random integer inside it.
+		fuck[x]=(rand()%20);
+		cout << fuck[x] << " " << x << endl;
+		x++;
+	}
+	while(x<=19);
+
+
+	cin.get();
+	cin.get();
+	return 0;
+};

@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+	int guesses=0;
+	int numberofguesses=0;
+	int guesstotal=0;
+	
+	cout << "enter your first guess or -1 to quit" << endl;
+	cin >> guesses;
+	while(guesses!=-1)
+	{
+	guesstotal=guesses+guesstotal;
+	numberofguesses++;
+	cout << "enter your next guess or -1 to quit" << endl;
+	cin >> guesses;
+	};
+	guesstotal = guesstotal/numberofguesses;
+	cout << guesstotal;
+
+	cin.get();
+	cin.get();
+	return 0;
+}
+

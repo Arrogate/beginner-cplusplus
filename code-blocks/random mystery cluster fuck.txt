@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+	int myarray[4] = {5,5,5,5};
+	int countdown = 0;
+	int sum = 0;
+
+	do
+	{
+		//or sum = myarray[countdown]+sum;
+		sum += myarray[countdown];
+		countdown++;
+	}
+	while(countdown<=4);
+
+		cout << "the sum of the array is: " << sum;
+
+
+	cin.get();
+	cin.get();
+	return 0;
+};

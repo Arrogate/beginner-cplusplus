@@ -1,0 +1,47 @@
+#include "stdafx.h"
+#include <iostream>
+#include <time.h>
+#include <stdio.h>
+
+using namespace std;
+
+void wait(int seconds); 
+
+int myfavoritenumber(int x);
+
+int main()
+{
+	int fuck;
+	int test;
+	fuck = myfavoritenumber(fuck);
+	
+		system("cls");
+	cout << fuck;
+	cin.get();
+	cin.get();
+return 0;
+}
+
+int myfavoritenumber(int x)
+{
+	
+	cout << "type in your favorite number" << endl;
+	cin >> x;
+	cout << endl << "in 5 seconds your number will be displayed..." << endl;
+	
+	for(int y=0;y<=5;y++)
+	{
+		cout << y << endl;
+		wait(1);
+	}
+	
+	return x;
+}
+
+
+void wait ( int seconds )
+{
+  clock_t endwait;
+  endwait = clock () + seconds * CLOCKS_PER_SEC ;
+  while (clock() < endwait) {}
+}

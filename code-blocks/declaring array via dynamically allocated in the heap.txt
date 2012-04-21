@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+void printuda(int myarray[], int maa);
+
+int main()
+	{
+	int udam;
+
+	cout << "Input amount of elements of array." << endl;
+	cin >> udam;
+
+	int *uda =  new int[udam];
+
+	for(int fff = 0;fff<udam;fff++)
+	{
+		cout << "input " << fff << " value of array. " << endl;
+		cin >> uda[fff];
+	};
+
+	printuda(uda, udam);
+
+
+	cout << endl << " The end of code. " << endl;
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+void printuda(int myarray[], int maa)
+{
+	//system("CLS");
+	for(int x = --maa;x>=0;x--)
+	{
+		cout << x << "   " << myarray[x] << endl;
+	};
+
+};

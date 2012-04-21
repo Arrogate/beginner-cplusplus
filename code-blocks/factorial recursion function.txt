@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int factorial(int x);
+
+int main()
+{
+	int f;
+	cin >> f;
+
+	cout << "the factorial of " << f << " is: " << factorial(f) << endl;
+
+	
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+
+int factorial(int x)
+{
+	if(x==1)
+	{
+		return 1;
+	}else
+	{
+		return x*factorial(x-1);
+	}
+};

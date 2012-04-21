@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+int main()
+{
+	float amount_made;
+	float principle_amount = 10000;
+	float rate = .01;
+
+	for(float day=0;day<=20;day++)
+	{
+		amount_made = principle_amount * pow(1+rate,day);
+		cout << day << " ----- " << amount_made << endl;
+
+	};
+
+	cin.get();
+	cin.get();
+	return 0;
+}
+

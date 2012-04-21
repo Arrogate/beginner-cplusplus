@@ -1,0 +1,34 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int volume(double l=1, double w=1, double h=1);
+
+int main()
+{
+	double one;
+	double two;
+	double three;
+
+	cout << "input length, width and height of square" << endl;
+	cin >> one >> two >> three;
+
+	double final;
+
+	final=volume(one,two,three);
+
+	cout << endl << final;
+	
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+int volume(double l, double w, double h)
+{
+	double totalvolume;
+	totalvolume= l * w * h;
+	return sqrt(totalvolume);
+};

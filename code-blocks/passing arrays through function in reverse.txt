@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+void printuda(int myarray[], int maa);
+
+int main()
+{
+	int uda[10]={10,9,8,7,6,5,4,3,2,1};
+
+	printuda(uda, 10);
+	
+	cout << "end of code";
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+
+void printuda(int myarray[], int maa)
+{
+	for(int x = --maa;x>=0;x--,x--)
+	{
+		cout << x << "   " << myarray[x] << endl;
+	};
+
+};
