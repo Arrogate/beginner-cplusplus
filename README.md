@@ -1,6 +1,5 @@
 beginner-cplusplus
 ==================
 
-Fun educational blocks of code i'm making for c++ help or give suggestions on what I should work on would be appreciated!
-
-
+Educational blocks of code I'm making for C++. Help by giving suggestions on how I should write constructive code
+or recommend projects I can work on!
