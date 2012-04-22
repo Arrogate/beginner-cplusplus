@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	int mda[2][3] = {{2,3,4},{5,6,7}};
+	int row=0;
+	do
+	{
+		for(int column=0;column<3;column++)
+		{
+			cout << mda[row][column] << " ";
+		}
+		cout << endl;
+		row++;
+	}
+	while(row<2);
+
+	cin.get();
+	cin.get();
+	return 0;
+};
