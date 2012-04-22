@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+void myfunction(int *point);
+
+int main()
+{
+	
+	int myint=5;
+	// * notifies pointer and &delocates the pointer to it's value stored.
+	int *mypointer = &myint;
+	
+	// you do not need to notify the point is a pointer with * 
+	myfunction(mypointer);
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+void myfunction(int *pointer)
+{
+	//add * infront of pointer to cout the variable stored in the address.
+	cout << pointer;
+
+};
