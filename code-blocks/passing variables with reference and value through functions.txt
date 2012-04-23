@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+void passbyvalue(int x);
+void passbyreference(int *pointer);
+
+int main()
+{
+
+	int varforvalue=5;
+	int varforref=30;
+
+	passbyvalue(varforvalue);
+	//add & to locate var's address
+	passbyreference(&varforref);
+
+	cout << "variable passed by value function is now " << varforvalue << endl;
+	cout << "variable passed by reference function is now " << varforref;
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+void passbyvalue(int x)
+{
+	x=99;
+};
+// remember to add *infront of declaration of parameter when passing pointer reference
+void passbyreference(int *pointer)
+{
+	*pointer = 66;
+
+};
