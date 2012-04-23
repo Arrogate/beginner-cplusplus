@@ -1,0 +1,14 @@
+#include "StdAfx.h"
+#include <iostream>
+#include "arrow.h"
+
+
+arrow::arrow(void)
+{
+}
+
+void arrow::printcrap()
+{
+	//use std:: operator to access std class objects.
+	std::cout << "stuff " << std::endl;
+};

@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+	double arraydouble[10];
+
+	//size of gets how many bytes a variable stores.
+	cout << arraydouble << " is storying " << sizeof(arraydouble) << " bytes. ";
+	cout << endl << "with ";
+	//using size of to find out how many elemts the array is storying.
+	cout << sizeof(arraydouble) / sizeof(arraydouble[0]) << " elements. ";
+	//dividing 80 bytes by 8 bytes gets the value.
+
+
+	cin.get();
+	cin.get();
+	return 0;
+};

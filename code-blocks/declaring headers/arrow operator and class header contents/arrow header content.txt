@@ -1,0 +1,10 @@
+#pragma once
+ref class arrow
+{
+public:
+	arrow(void);
+	//protype functions here.
+	void printcrap();
+	//haven't declared private section of class.
+};
+

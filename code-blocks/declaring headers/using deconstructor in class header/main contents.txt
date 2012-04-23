@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+#include "arrow.h"
+
+using namespace std;
+
+
+
+
+int main()
+{
+	arrow arrowhead;
+	cout << "after declaration of arrow arrowhead class and end of code.";
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+

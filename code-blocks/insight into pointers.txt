@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+	int matt[5];
+	int *mp0=&matt[0];
+	int *mp1=&matt[1];
+	int *mp2=&matt[2];
+	int *mp3=&matt[3];
+
+	cout << "mp0 is at " << mp0 << endl;
+	cout << "mp1 is at " << mp1 << endl;
+	cout << "mp2 is at " << mp2 << endl;
+	cout << "mp3 is at " << mp3 << endl;
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+

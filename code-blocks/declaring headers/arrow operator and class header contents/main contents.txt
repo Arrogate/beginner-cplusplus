@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include "arrow.h"
+
+using namespace std;
+
+
+
+
+int main()
+{
+	//declaring an object of arrow.
+	arrow arrowobject;
+
+	//^ and % are class operators for pointer operators 
+	arrow ^arrowpoint = %arrowobject;
+
+	//access the functions and variable of 
+	//class arrow's object with . seperator
+	arrowobject.printcrap();
+
+	//-> is arrow member selection operator replaces the . seperator function
+	//when you're working with pointers to access class objects.
+	arrowpoint->printcrap();
+	
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+

@@ -1,0 +1,21 @@
+#include "StdAfx.h"
+#include <iostream>
+#include "arrow.h"
+
+
+arrow::arrow(void)
+{
+	//remember to use std:: to access standards for cout and endl
+	std::cout << "I am the constructor. " << std::endl;
+	//constructor at the declaration of a class
+	//desconstructor is set of instructions at the deconstruction 
+}
+
+arrow::~arrow()
+{// tilda signifies decleration of deconstructor and is very basic. no return..
+	//no parameters... ect..
+	std::cout << std::endl << "destruction of arrow class." << std::endl;
+	//below code allows you to see end of program.
+	std::cin.get();
+
+};
