@@ -1,0 +1,19 @@
+#include "StdAfx.h"
+#include <iostream>
+#include "arrow.h"
+
+
+arrow::arrow(void)
+{
+}
+
+void arrow::printstuff()
+{
+	std::cout << "call of printstuff function. " << std::endl;
+
+};
+
+void arrow::printthiscon() const
+{
+	std::cout << "this is constant" << std::endl;
+};

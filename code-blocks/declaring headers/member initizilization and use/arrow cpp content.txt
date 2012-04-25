@@ -1,0 +1,18 @@
+#include "StdAfx.h"
+#include <iostream>
+#include "arrow.h"
+
+
+arrow::arrow(int a, int b)//Initializers go in between here starting with a colon and
+//use commas to seperate each 
+:intvar(a), 
+constvar(b)
+{
+	std::cout << "this is the constructor & location. " << std::endl;
+};
+
+void arrow::print()
+{
+	std::cout << "int var is " << intvar << " const var is " << constvar << std::endl;
+
+};

@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "arrow.h"
+
+using namespace std;
+
+int main()
+{
+	arrow arrowobj;
+	arrowobj.printstuff();
+
+	const arrow conarrow;
+	conarrow.printthiscon();
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+
+
