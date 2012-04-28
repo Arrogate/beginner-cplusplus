@@ -6,11 +6,18 @@ using namespace std;
 
 int main()
 {
-	arrow myobj(5,20);
+	int f;
+	int two;
+	cin >> f;
+	cin >> two;
+	arrow myobj(f,two);
 	myobj.print();
+
+	myobj.add();
 
 	cin.get();
 	cin.get();
 	return 0;
 };
+
 

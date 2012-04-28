@@ -16,3 +16,12 @@ void arrow::print()
 	std::cout << "int var is " << intvar << " const var is " << constvar << std::endl;
 
 };
+
+
+void arrow::add()
+{
+	intvar++;
+		std::cout << intvar << std::endl;
+	
+
+};

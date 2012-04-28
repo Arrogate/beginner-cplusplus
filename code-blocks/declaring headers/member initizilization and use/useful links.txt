@@ -1,0 +1,16 @@
+http://cplusplus.com/forum/beginner/69268/
+
+
+
+
+arrow.h(7): error C3842: 'printthiscon': 'const' and 'volatile' qualifiers on 
+member functions of managed types are not supported
+
+qualifiers on 
+member functions of managed types are not supported
+
+
+
+
+
+
