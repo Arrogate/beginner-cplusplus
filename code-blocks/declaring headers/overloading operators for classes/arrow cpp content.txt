@@ -1,0 +1,23 @@
+#include "StdAfx.h"
+#include <iostream>
+#include "arrow.h"
+
+//empty class constructor
+arrow::arrow()
+{
+};
+//constructor that passes var through it
+arrow::arrow(int a)
+{
+	num = a;
+};
+//class of arrow named "operator" followed by operator to overloard
+arrow arrow::operator+(arrow aao)
+{
+	//declaring class object.
+	arrow newarrow;
+	//set of instructions we're assigning to '+' operator
+	newarrow.num = num + aao.num;
+	//returning new arrow object with addition
+	return(newarrow);
+};

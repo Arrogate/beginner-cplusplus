@@ -1,0 +1,11 @@
+
+
+class arrow
+{
+public:
+	arrow(int);
+	void printfunc();
+private:
+	int tip;
+};
+

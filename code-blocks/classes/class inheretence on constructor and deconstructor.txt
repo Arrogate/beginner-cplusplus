@@ -1,0 +1,51 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+class arrow
+{
+public:
+//class name function indicates constructor.
+arrow()
+{
+	cout << "this is the constructor." << endl;
+};
+//tila and class name function indicates deconstructor.
+~arrow()
+{
+	cout << "this is the deconstructor." << endl;
+	cin.get();
+};
+private:
+};
+
+class newarrow: public arrow
+{
+public:
+	newarrow()
+	{
+		cout << " this is new arrow constructor. " << endl;
+	};
+	~newarrow()
+	{
+		cout << " this is newarrow deconstructor. " << endl;
+	};
+
+};
+
+int main()
+{
+	/*it's printed out multiple times because it runs
+	through the program and requires that new arrow
+	invoke arrow or it's "base class" to make sure
+	the program is running correctly. */
+	//this does not mean it inherets the constructor and deconstructor.
+	newarrow mynaobj;
+
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+

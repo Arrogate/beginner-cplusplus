@@ -1,0 +1,15 @@
+
+
+class arrow
+{
+public:
+	//declaring constructor. default constructor is necessary.
+	arrow();
+	//declaring another constructor that passes an int value through it.
+	arrow(int a);
+	//overloading an operator for class function protocal
+	arrow operator+(arrow);
+	//declared class member: number variable.
+	int num;
+};
+

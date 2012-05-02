@@ -1,0 +1,9 @@
+#include "StdAfx.h"
+#include <iostream>
+#include "arrow.h"
+#include "arrows.h"
+
+arrows::arrows()
+{
+}
+

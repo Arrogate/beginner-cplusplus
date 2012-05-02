@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+class arrow
+{
+public:
+	int arrowhead;
+protected:
+	int arrowshaft;
+private:
+	int arrowfeathers;
+};
+
+class newarrow: public arrow
+{};
+
+int main()
+{
+	newarrow myarrow;
+	myarrow.arrowfeathers=1;
+	cout << myarrow.arrowhead;
+
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+

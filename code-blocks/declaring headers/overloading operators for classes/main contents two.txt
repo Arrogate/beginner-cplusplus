@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include "arrow.h"
+
+using namespace std;
+
+//using a function to add 
+arrow myarrowfunction(arrow x, arrow y);
+
+int main()
+{
+	int fi;
+	int ci;
+	cin >> fi;
+	cin >> ci;
+	
+	//gets passed to second constructor be default
+	//because they has variable parameters
+	arrow a(fi);
+	arrow b(ci);
+
+	//goes to default first constructor and inherets empty variable.
+	arrow c;
+	c=myarrowfunction(a,b);
+
+	cout << c.num;
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+
+
+arrow myarrowfunction(arrow x, arrow y)
+{
+	arrow z;
+	z=x+y;
+	return z;
+};

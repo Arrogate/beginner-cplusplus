@@ -1,0 +1,14 @@
+#include "StdAfx.h"
+#include <iostream>
+#include "arrow.h"
+#include "arrows.h"
+
+//empty class constructor
+arrow::arrow()
+{
+};
+
+void arrow::printstuff()
+{
+	std::cout << "hello world!";
+};

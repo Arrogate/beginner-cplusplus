@@ -1,0 +1,10 @@
+
+
+//: colon followed by public and then class you want to inheret from is the syntax
+//for inheretence. only public and protected are inhereted, not private.
+class arrows: public arrow
+{
+public:
+	arrows();
+};
+

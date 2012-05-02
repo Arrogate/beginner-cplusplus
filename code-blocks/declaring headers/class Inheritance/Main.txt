@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include "arrow.h"
+#include "arrows.h"
+
+using namespace std;
+
+int main()
+{
+	arrows myaobj;
+	myaobj.printstuff();
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+

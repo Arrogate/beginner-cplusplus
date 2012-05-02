@@ -1,0 +1,18 @@
+#include "StdAfx.h"
+#include <iostream>
+#include "arrow.h"
+
+
+arrow::arrow(int num)
+:tip(num)
+{
+
+
+};
+
+void arrow::printfunc()
+{
+	std::cout << "tip = " << tip << std::endl;
+	std::cout << "this->tip = " << this->tip << std::endl;
+	std::cout << "(*this).tip = " << (*this).tip << std::endl;
+};

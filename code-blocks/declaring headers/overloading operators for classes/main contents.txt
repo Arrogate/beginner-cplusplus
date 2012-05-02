@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+#include "arrow.h"
+
+using namespace std;
+
+int main()
+{
+	//declaring 3 objects of arrow class from arrow header.
+	arrow a(34);
+	//when declaring objects with var it gets passed to the second
+	//constructor instead.
+	arrow b(26);
+
+	//not required to set parameters for c because that's the object we're
+	//using to store the result, int cannot store that data type, even
+	//though result is an integer.
+	arrow c;
+
+	//can now us + operator to add objects of classes.
+	c=a+b;
+
+	//printing out value stored it object c's num variable.
+	cout << c.num;
+
+	cin.get();
+	cin.get();
+	return 0;
+};

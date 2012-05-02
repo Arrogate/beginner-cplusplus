@@ -1,0 +1,10 @@
+
+
+class arrow
+{
+public:
+	//declaring constructor. default constructor is necessary.
+	arrow();
+	void printstuff();
+};
+
