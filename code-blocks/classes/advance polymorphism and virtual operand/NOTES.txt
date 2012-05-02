@@ -1,0 +1,6 @@
+// NOTES
+/*
+PURE VIRTUAL FUNCTIONS: function with no implementation/body.
+ABSTRACT CLASSES: a class that has a pure virtual function inside of it.
+(they're similar.)
+*/

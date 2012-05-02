@@ -1,0 +1,71 @@
+#include "stdafx.h"
+#include <iostream>
+//intro to polymorphism
+using namespace std;
+
+//using a base class that will use sub classes to 
+//inherent common base attributes is the concept of polymorphism
+class enemy
+{
+public:
+	void set_attack_power(int a)
+{
+	attackpower=a;
+};
+
+
+protected:
+		
+	int attackpower;
+
+private:
+
+};
+
+class ninja: public enemy
+{
+public:
+	ninja()
+	{
+		cout << "a ninja appeared! " << endl;
+	}
+	void attack()
+	{
+		cout << "ninja attacks and does -" <<  attackpower << endl;
+	};
+};
+
+class monster: public enemy
+{
+public:
+	monster()
+	{
+		cout << "a monster appeared! " << endl;
+	}
+	void attack()
+	{
+		cout << "monster attacks and does -" <<  attackpower << endl;
+	};
+};
+
+
+
+int main()
+{
+	ninja n;
+	monster m;
+	//declaring pointer to class object.
+	enemy *enemy1= &n;
+	enemy *enemy2= &m;
+	enemy1->set_attack_power(13);
+	enemy2->set_attack_power(19);
+
+	n.attack();
+	m.attack();
+
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+

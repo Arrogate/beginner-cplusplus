@@ -1,0 +1,75 @@
+#include "stdafx.h"
+#include <iostream>
+
+//more advanced polymorphism
+using namespace std;
+
+// NOTES
+/*
+PURE VIRTUAL FUNCTIONS: function with no implementation/body.
+ABSTRACT CLASSES: a class that has a pure virtual function inside of it.
+(they're similar.)
+*/
+
+//using a base class that will use sub classes to 
+//inherent common base attributes is the concept of polymorphism
+class enemy
+{
+public:
+	/*operand virtual signifies that the function will be used polymorphicly
+	this tells the sub classes that this will be a template for the sub
+	functions that inheret it.
+	Virtual also navigates the pointer to locate what it's doing.
+	*/
+	//a pure virtual function has no implementation/body and does nothing.
+	virtual void attack()=0;
+};
+//now a derviced class
+class ninja: public enemy
+{
+public:
+	//customizes polymorphic attack function for ninja.
+	void attack()
+	{
+		cout << "ninja attacks!" << endl;
+
+	};
+};
+
+class monster: public enemy
+{
+public:
+	//customizes polymorphic attack function for monster.
+	//IF the class doesn't have it's own attack function
+	//it will by default inheret that main base class's attack function.
+	/* but if the base class function attack() is a pure virtual function
+	it does nothing and it is not allowed to inheret the default body				implementation and it needs to be over written.*/
+	void attack()
+	{
+		cout << "monster attacks!" << endl;
+	};
+};
+
+
+
+int main()
+{
+	// creates ninja and monster function.
+	ninja n;
+	monster m;
+	//creates a pointer to ninja and monsters address.
+	enemy *nn = &n;
+	enemy *mm = &m;
+	
+	/*accesses ninja and monster's address through the pointer and calls
+	the attack function through the arrow pointer access operator.
+	*/
+	nn->attack();
+	mm->attack();
+	
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+

@@ -1,0 +1,71 @@
+#include "stdafx.h"
+#include <iostream>
+
+//more advanced polymorphism
+using namespace std;
+
+//using a base class that will use sub classes to 
+//inherent common base attributes is the concept of polymorphism
+class enemy
+{
+public:
+	/*operand virtual signifies that the function will be used polymorphicly
+	this tells the sub classes that this will be a template for the sub
+	functions that inheret it.
+	*/
+	virtual void attack()
+	{};
+};
+
+class ninja: public enemy
+{
+public:
+	//customizes polymorphic attack function for ninja.
+	void attack()
+	{
+		cout << "ninja attacks!" << endl;
+
+	};
+	~ninja()
+	{
+		cout << "I have died!! " << endl;
+	};
+};
+
+class monster: public enemy
+{
+public:
+	//customizes polymorphic attack function for monster.
+	void attack()
+	{
+		cout << "monster attacks!" << endl;
+	};
+	~monster()
+	{
+		cout << "I have died!! " << endl;
+	};
+};
+
+
+
+int main()
+{
+	// creates ninja and monster function.
+	ninja n;
+	monster m;
+	//creates a pointer to ninja and monsters address.
+	enemy *nn = &n;
+	enemy *mm = &m;
+	
+	/*accesses ninja and monster's address through the pointer and calls
+	the attack function through the arrow pointer access operator.
+	*/
+	nn->attack();
+	mm->attack();
+	
+
+	cin.get();
+	cin.get();
+	return 0;
+};
+
