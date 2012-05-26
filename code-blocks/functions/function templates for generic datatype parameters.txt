@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+//requires more than one generic class if you intend to have multiple datatypes.
+template <class myclass,class secondinstance>
+myclass smaller(myclass x, secondinstance y)
+{
+	//new way to use return or parameters.
+	/*
+	if(x<=y)
+	{
+		return x;
+	}
+	else
+	{
+		return y;
+	};*/
+	return (x<y?x:y);
+};
+
+int main()
+{
+	int a = 89;
+	double b = 1.5;
+	//first parameter sets standard apparently.
+	cout << smaller(b,a);
+	
+	cin.get();
+	cin.get();
+	return 0;
+};

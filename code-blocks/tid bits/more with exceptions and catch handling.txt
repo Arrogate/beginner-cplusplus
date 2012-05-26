@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+	try
+	{
+		float num1;
+		float num2;
+		
+		//arrow shows direction information is going.
+		cout << "enter first number: " << endl;
+		cin >> num1;
+		cout << "enter second number: " << endl;
+		cin >> num2;
+		
+		if(num2==0)
+		{
+			//the throw makes it skip down to the catch block
+			throw 0;
+		};
+			cout << num1/num2 << endl;
+			//... is the default catch for datatypes.
+	}catch(...)
+	{
+		cout << "error code: 0" << " You can't divide by zero.";
+	};
+
+	cin.get();
+	cin.get();
+	return 0;
+};

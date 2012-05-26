@@ -1,0 +1,51 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+template<class T>
+class myclass
+{
+public:
+	//in between the parans are parameters, guidelines to pass information through
+	myclass(T x)
+	{
+		cout << x << " is not a character." << endl;
+	};
+};
+//template<> signifies class Specialization
+template<>
+class myclass<char>
+{
+public:
+	myclass(char x)
+	{
+		cout << x << " is a character." << endl;
+	};
+};
+
+template<>
+class myclass<string>
+{
+public:
+	myclass(string x)
+	{
+		cout << x << " is a string." << endl;
+	};
+};
+
+int main()
+{
+	//declaring myclass data type or specifier.
+	//specifying data type being used.
+	//inputting integer parameters.
+	myclass <int> myobj(7);
+	myclass <char> myobj2('h');
+	myclass <double> myobj3(3.5);
+	myclass <string> myobj4("hello");
+	//^examples^
+
+	cin.get();
+	cin.get();
+	return 0;
+};

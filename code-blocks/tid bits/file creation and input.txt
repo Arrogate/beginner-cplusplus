@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+	ofstream saveds("savefile.txt");
+
+	if(saveds.is_open())
+		{
+		//using while loop for data types,
+		//the data types need to be empty.
+		int IDnum;
+		string Name;
+		int Money;
+
+		cout << "enter player's ID, Name and money." << endl;
+		//ctrl+z is end of file marker saying it's the end of the file
+		cout << "press Ctrl+Z to save and quit" << endl;
+	
+
+		//will do until those values are input.
+		while(cin >> IDnum >> Name >> Money)
+			{
+	//this line is the format of how information is put into the file.
+				saveds << IDnum << " " << Name << " " << Money << endl;
+			};
+
+	}else
+	{
+			cout << "an error occured" << endl;
+	}
+	//closes the file after using.
+		saveds.close();
+	cin.get();
+	cin.get();
+	return 0;
+};

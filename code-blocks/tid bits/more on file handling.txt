@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+
+int main()
+{
+	//you can create the object on one line of code.
+	ofstream myfile("myfile.txt");
+	//don't forget to associate object with file.
+
+	//is_open = if object is associated with a file
+	if(myfile.is_open())
+	{
+		cout << "the file is open." << endl;
+	};
+
+	myfile << "This is my file contents";
+	myfile.close();
+
+	if(!myfile.is_open())
+	{
+		cout << "my file is closed." << endl;
+	};
+
+	cin.get();
+	cin.get();
+	return 0;
+};

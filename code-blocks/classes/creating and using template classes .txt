@@ -1,0 +1,44 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+
+template <class T>
+class myclass
+{
+	T first, second;
+public:
+	myclass(T a, T b)
+	{
+		first = a;
+		second = b;
+	};
+	T bigger();
+};
+//the template needs to be re-made each function or class
+template <class T>
+//:: access and tells what class we're working with.
+/*the <T> after myclass is telling the compiler that we're using the same
+function parameters*/
+T myclass<T>::bigger()
+{
+	return (first>second?first:second);
+//if first is bigger than second ?then return first :else return second.
+};
+
+
+int main()
+{
+	//required to declare which variable type we're using infront of
+	//class declaration.
+	myclass <int> myobj(5, 10);
+
+	cout << myobj.bigger();
+
+	
+	cin.get();
+	cin.get();
+	return 0;
+};

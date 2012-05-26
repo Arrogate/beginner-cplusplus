@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+
+int main()
+{
+	ifstream myfile("savefile.txt");
+	int IDnum;
+	string Name;
+	int Money;
+
+	//myfile >> puts savefile.txt's contents inside the variables
+	//then prints out the variables on the screen.
+	while(myfile >> IDnum >> Name >> Money)//test parameters becomes false when
+		//no more data is aviable inside the file.
+	{
+		cout << IDnum << ", " << Name << ", " << Money << endl;
+	};
+	
+
+	cin.get();
+	cin.get();
+	return 0;
+};

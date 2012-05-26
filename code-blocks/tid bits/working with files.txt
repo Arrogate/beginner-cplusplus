@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+//fsteam is header for working with files
+
+
+using namespace std;
+
+
+int main()
+{
+//ofstream declares class data type of a file.
+	ofstream myfile;
+//myfile.open opens file and gives it string paramaters and file extension type
+//and declares file.
+	myfile.open("hello.txt");
+	
+//myfile operator information steam puts string or information inside file type.
+	myfile << "hello!";
+//closes the file link, good protocols.
+	myfile.close();
+
+
+	cin.get();
+	cin.get();
+	return 0;
+};

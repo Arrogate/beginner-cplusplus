@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+	try
+	{
+		int myint=5;
+		int mysecondint=10;
+
+		if(mysecondint>myint)
+		{
+			throw 6364;
+		};
+		//catching the error
+	}catch(int x)
+	{
+		cout << "second int cannot be larger. ERROR NUMBER: " << x << endl;
+		//excluding catch will result in an error.
+	};
+
+	cin.get();
+	cin.get();
+	return 0;
+};
